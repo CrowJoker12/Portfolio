@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Biografia - Gabriel Ferraz</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Titillium+Web:wght@300&display=swap');
+        body{
+            background-color: #000000;
+        }
+        h4{
+            color: #FFFFFF;
+            text-align: justify;
+            padding: 0px 353px;
+            width: 589px;
+        }
+        #menu {
+            background: #000000;
+            color: #FFF;
+            height: 60px;
+            padding-left: 18px;
+            border-radius: 0px;
+        }
+        #menu ul, #menu li {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none
+        }
+        #menu ul {
+            width: 48%;
+        }
+        #menu li {
+            float: left;
+            display: inline;
+            position: relative;
+        }
+        #menu a {
+            display: block;
+            line-height: 60px;
+            padding: 0 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-size: 30px;
+        }
+        #menu a.dropdown-arrow:after {
+            content: "\25BE";
+            margin-left: 5px;
+        }
+        #menu li a:hover {
+            color: #000000;
+            background: #FFFFFF;
+        }
+        #menu input {
+            display: none;
+            margin: 0;
+            padding: 0;
+            height: 60px;
+            width: 100%;
+            opacity: 0;
+            cursor: pointer
+        }
+        #menu label {
+            display: none;
+            line-height: 60px;
+            text-align: center;
+            position: absolute;
+            left: 35px
+        }
+        #menu label:before {
+            font-size: 1.6em;
+            content: "\2261";
+            margin-left: 20px;
+        }
+        #menu ul.sub-menus{
+            height: auto;
+            overflow: hidden;
+            width: 170px;
+            background: #444444;
+            position: absolute;
+            z-index: 99;
+            display: none;
+        }
+        #menu ul.sub-menus li {
+            display: block;
+            width: 100%;
+        }
+        #menu ul.sub-menus a {
+            color: #FFFFFF;
+            font-size: 16px;
+        }
+        #menu li:hover ul.sub-menus {
+            display: block
+        }
+        #menu ul.sub-menus a:hover{
+            background: #F2F2F2;
+            color: #444444;
+        }
+        @media screen and (max-width: 800px){
+            #menu {position:relative}
+            #menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+            #menu ul.sub-menus {width:100%;position:static;}
+            #menu ul.sub-menus a {padding-left:30px;}
+            #menu li {display:block;float:none;width:auto;}
+            #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+            #menu input {z-index:4}
+            #menu input:checked + label {color:white}
+            #menu input:checked + label:before {content:"\00d7"}
+            #menu input:checked ~ ul {display:block}
+        }
+    </style>
+    <style type="text/css">
+        h4, li{
+            font-family: 'Edu TAS Beginner', cursive;
+            font-family: 'Titillium Web', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <comment><img src="https://i.imgur.com/RglVYx5.png" width="250" height="60" align="left"></comment>
+  <ul>
+    <li><a href='Inicio.html'>Início</a></li>
+    <li><a href='Pessoal.html'>Pessoal</a></li>
+    <li><a href='Profissional.html'>Profissional</a></li>
+    <li><a href='https://github.com/CrowJoker12'>GitHub</a></li>
+  </ul>
+</nav>
+<h4>
+<p>Meu nome é Gabriel Cardoso de Souza Ferraz, tenho 18 anos, e sou um cara normal que ama o que faz.</p>
+<p>Nascido em Blumenau, nunca me mudei para outro lugar, vivo aqui a 18 anos e o lugar mais longe de viagem foi Porto Alegre, para visitar o estádio do meu time preferido, Internacional.</p>
+<p>Meus pais, Antonio e Darlene, e a minha namorada Evelyn, são as minhas motivações para levantar e encarar esse jogo difícil chamado Vida.</p>
+<p>Falando em jogo, é meu hobby e atividade favorita, me faz escapar da realidade e emergir num universo totalmente diferente, onde eu me sinto bem.<br>
+    Eu jogo desde os meus 6 anos, me ajudou a superar a depressão que tive em 2017/18 e ajuda na minha ansiedade.<br>
+    Outra coisa que eu amo ver, jogar e emergir no universo é TableTop RPG. Conhecido também como RPG de Mesa, é uma mistura de jogo com atuação, onde você é aquele que você controla.</p>
+<p>Sou uma pessoa que ama aprender coisas novas, estou sempre disposto a acrescentar
+   algo novo nas minhas experiências de vida, pessoal e profissional.</p>
+</h4>
+</body>
+</html>
